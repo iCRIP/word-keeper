@@ -1,4 +1,3 @@
-if (!(window != window.top)) {
   document.body.insertAdjacentHTML('beforeend',
     `
       <div class="word-keeper__block" id="word-keeper-block">
@@ -76,7 +75,3 @@ if (!(window != window.top)) {
       copyToClipboard(selectionString)
     }
   }
-  
-
-
-}
