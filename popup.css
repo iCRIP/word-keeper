@@ -9,7 +9,7 @@
   overflow: hidden;
   opacity: 0;
   pointer-events: none;
-  z-index: 100;
+  z-index: 1000;
 }
 #word-keeper-block.word-keeper__block .word-keeper__icon{
   float: left;
