@@ -1,0 +1,26 @@
+{
+  "name": "Word Keeper",
+  "version": "0.0.1",
+  "description": "Functionality to your selection string",
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "bookmarks"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "web_accessible_resources": [
+    "popup.css"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "run_at": "document_end",
+      "js": ["popup.js"],
+      "css": ["popup.css"]
+    }
+  ],
+  "manifest_version": 2
+}
